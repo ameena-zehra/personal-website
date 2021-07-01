@@ -1,0 +1,96 @@
+.rowabovetext {
+  height: 15%;
+  width: auto;
+}
+.outerbox {
+  padding-top: 15px;
+  height: auto;
+  min-height: 100%;
+}
+.innerbox {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+.header-text {
+  color: black;
+  font-size: clamp(1.75rem, 4vw, 5rem);
+  font-weight: 600;
+}
+.header-caption {
+  font-size: clamp(1rem, 2.25vw, 2.25rem);
+  margin-top: 0%;
+  color: black;
+}
+.rowwithillustration {
+  justify-content: center;
+}
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 70%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.svg-content {
+  padding-top: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#hand {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: bottom; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(2.5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(2.5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.filler {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+@media screen and (max-width: 767px) {
+  .header-caption,
+  .header-text {
+    text-align: center;
+  }
+  .filler {
+    justify-content: center;
+  }
+  .columnwithbutton {
+    margin-left: 7%;
+  }
+  .hi-there {
+    margin-top: 0%;
+  }
+}
+
+@media screen and (min-width: 1409px) {
+  /* .header-caption {
+    font-size: 1.75rem;
+  } */
+}

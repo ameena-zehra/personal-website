@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+.footerbox {
+  background-color: #1e1d1d;
+  margin-top: 10%;
+}
+.changingtextpanel {
+  margin-top: 3%;
+  margin-left: 50px;
+  font-family: "Open Sans", sans-serif;
+  color: #f5f0eb;
+  font-size: clamp(0.85rem, 4vw, 3rem);
+  margin-bottom: 2%;
+}
+.textinfooter {
+  font-family: "Open Sans", sans-serif;
+  color: #f5f0eb;
+  font-size: clamp(0.35rem, 1.25vw, 1.3rem);
+  /* margin-left: 50px; */
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.transitionspans:before {
+  content: "";
+  animation: animate infinite 15s;
+}
+
+@keyframes animate {
+  0% {
+    content: " Collaborate";
+  }
+  20% {
+    content: " Innovate";
+  }
+  40% {
+    content: " Create";
+  }
+  60% {
+    content: " Collaborate";
+  }
+  80% {
+    content: " Innovate";
+  }
+  100% {
+    content: " Create";
+  }
+}
+.heart {
+  height: 16px;
+  width: auto;
+  padding-left: 2px;
+  padding-right: 3px;
+}
+.rowoficons {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.github {
+  margin-left: 40px;
+  height: 25px;
+  width: auto;
+}
+.linkedin {
+  margin-left: 20px;
+  height: 25px;
+  width: auto;
+}
+
+.devpost {
+  margin-left: 20px;
+  height: 25px;
+  width: auto;
+}
+@media screen and (max-width: 700px) {
+  .github,
+  .linkedin,
+  .devpost {
+    height: 20px;
+    width: auto;
+  }
+  .heart {
+    height: 8px;
+    width: auto;
+  }
+}
+.copyright {
+  margin-left: 0%;
+  margin-right: 4%;
+  font-size: clamp(0.3rem, 1.2vw, 1.25rem);
+}
+
+.github:hover,
+.linkedin:hover,
+.devpost:hover {
+  opacity: 50%;
+}

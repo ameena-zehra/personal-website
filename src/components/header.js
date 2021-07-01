@@ -1,42 +1,30 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image'
+import "../styles/navigation.css"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+  <header>
+    <Navbar expand ="sm">
+        <Navbar.Brand href="/"> <div className ="notosanstext nav-text logo"> Ameena Zehra</div></Navbar.Brand>
+        <Navbar.Toggle aria-controls ="navbarResponsive"/>
+        <Navbar.Collapse id = "navbarResponsive">
+          <Nav as ="ul" className = "ml-auto">
+            <Nav.Item as ="li">
+              <Link to="/about" className = "notosanstext nav-text" activeClassName ="active"> about</Link>
+            </Nav.Item>
+            <Nav.Item as ="li">
+              <Link to="/projects" className = "notosanstext nav-text" activeClassName ="active"> work </Link>
+            </Nav.Item>
+            <Nav.Item as ="li">
+              <Link to="/resume" className = "notosanstext nav-text" activeClassName ="active"> resume</Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
