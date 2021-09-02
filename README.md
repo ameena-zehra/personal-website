@@ -108,3 +108,5 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 # portfolio-website
 # portfolio-website
 # portfolio-website
+# personal-website
+# personal-website
