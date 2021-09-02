@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
               <Link to="/myprojects" className = "notosanstext nav-text" activeClassName ="active"> my projects </Link>
             </Nav.Item>
             <Nav.Item as ="li">
-              <Link to="/resume" className = "notosanstext nav-text" activeClassName ="active"> resume</Link>
+              <Link to="https://drive.google.com/file/d/10yF9tz-WWEKYsrC0OCf6-QDHpq5LKw7q/view?usp=sharing" className = "notosanstext nav-text" activeClassName ="active"> resume</Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
