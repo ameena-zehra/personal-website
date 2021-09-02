@@ -13,15 +13,12 @@ const Footer = ({ siteTitle }) => (
     <Container className="outerbox footerbox" fluid>
       <div className="footercontent">
         <Row>
-        <div className="changingtextpanel">
-          Let's  
-          <span className ="transitionspans"></span>
-        </div>
-        </Row>
-        
-        <Row>
-          <Col xs={4}>
-          <>
+        <Col xs="8">
+            <div className="changingtextpanel">
+            Let's  
+            <span className ="transitionspans"></span>
+            </div>
+            <>
           <style type="text/css">
             {`
               .btn{
@@ -54,29 +51,36 @@ const Footer = ({ siteTitle }) => (
                  </Button>
                  </a>
                 </>
-                </Col>
-
-                <Col xs={4}> </Col>
-              <Col xs={4}>
-              <div className="textinfooter">
-                Made w/  <Image className="heart" src={HeartIcon}></Image>
-                  using Gatsby, React and Figma
-              </div>
-              </Col>
-              </Row>
-              <Row className ="rowoficons">
-                <Col>
-                <Link to= "https://github.com/ameena-zehra" target="_blank">
-                <Image  className="github" src={Github}></Image> </Link>\
-                <Link to= "https://www.linkedin.com/in/ameena-naqvi-638362165/" target="_blank">
-                <Image  className="linkedin" src={Linkedin}></Image>  </Link> \
-                <Link to= "https://devpost.com/ameena-zehra?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">
-                <Image  className="devpost" src={Devpost}></Image> </Link>\
-                </Col>
-                <div className ="textinfooter copyright">
+                <br></br>
+                <br></br>
+            <div>
+                
+            <Link to= "https://github.com/ameena-zehra" target="_blank">
+            <Image  className="github" src={Github}></Image> </Link> 
+            <Link to= "https://www.linkedin.com/in/ameena-naqvi-638362165/" target="_blank">
+            <Image  className="linkedin" src={Linkedin}></Image>  </Link> 
+            <Link to= "https://devpost.com/ameena-zehra?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">
+            <Image  className="devpost" src={Devpost}></Image> </Link>
+            <br></br>
+            <br></br>
+            </div>
+        </Col>
+        <Col xs="4" id="secondcolumn">
+        <div id ="secondcolumn" className="textinfooter">
+           
+            Made w/  <Image className="heart" src={HeartIcon}></Image>
+              using Gatsby, React and Figma
+            <br></br>
+            <br></br>
+                        
+            </div>
+            <div  className ="textinfooter copyright">
                   © 2021 Ameena Naqvi all rights reserved
-                </div>
-              </Row>
+            </div>
+        </Col>
+        </Row>
+        
+        
       </div>
 
                     

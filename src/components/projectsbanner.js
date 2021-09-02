@@ -5,24 +5,24 @@ import Image from 'react-bootstrap/Image'
 import "../styles/projectsbanner.css"
 import Recipro from "../images/recipromockup copy.png";
 import Habbit from "../images/habbitmockup copy.png";
-import Arrow from "../images/arrow.png";
+import BetterLives from "../images/betterlives.png";
 const ProjectsBanner = ({ siteTitle }) => (
   <projectsbanner>
     <div className ="innerboxforbanner">
-     <Row className="rowwitharrow">
-        <Image className="arrow" src={Arrow}></Image>
-      </Row>
-      <div className ="notosanstext header-text main-title"> My Projects</div>
+     
+      
       <Row className ="projectsrow">
-        <Col xs={6} >
-          <div className= "reciprocontainer">
-            <Image className="recipro" src={Recipro}></Image>
+        <Col xs={4} md={6} >
+          <div className="reciprocontainer">
+            <Link href="/recipro">
+              <Image className="recipro" src={Recipro}></Image>
+            </Link>
           </div>
         </Col>
-        <Col xs={6} >
-        <div className= "notosanstext projects-title">
+        <Col xs={6} md={6} >
+        <Link href="/recipro" className= "notosanstext projects-title">
             RECIPRO
-          </div>
+          </Link>
           <div className="competitionnames">
             TU20 2021 Competition
           </div>
@@ -38,15 +38,17 @@ const ProjectsBanner = ({ siteTitle }) => (
         </Col>
       </Row>
       <Row className ="projectsrow">
-      <Col xs={6} >
-      <div className= "habbitcontainer">
-            <Image className="habbit" src={Habbit}></Image>
+      <Col xs={4} md={6} >
+          <div className="habbitcontainer">
+            <Link href="/habbit">
+              <Image className="habbit" src={Habbit}></Image>
+            </Link>
           </div>
         </Col>
-        <Col xs={6} >
-          <div className= "notosanstext projects-title">
+        <Col xs={6} md={6} >
+          <Link href="/habbit" className= "notosanstext projects-title">
             HABBIT
-          </div>
+          </Link>
           <div className="competitionnames">
             SheHacks 2021 Competition
           </div>
@@ -55,6 +57,32 @@ const ProjectsBanner = ({ siteTitle }) => (
           </div>
           <span className="notosanstext skillsdemonstrated">
             FRONT-END DEVELOPMENT
+          </span>
+          <span className="notosanstext skillsdemonstrated">
+            UI/UX DESIGN
+          </span>
+        </Col>
+      </Row>
+      <Row className ="projectsrow">
+        <Col xs={4} md={6} >
+          <div className="betterlivescontainer">
+            <Link href="/betterlives">
+              <Image className="betterlives" src={BetterLives}></Image>
+            </Link>
+          </div>
+        </Col>
+        <Col xs={6} md={6} >
+        <Link href="/betterlives" className= "notosanstext projects-title">
+            BETTER LIVES
+          </Link>
+          <div className="competitionnames">
+            Product Designer @ IdeasInc 2021
+          </div>
+          <div className= "notosanstext projectstext">
+              BetterLives is a mobile app that connects homeless people with resources provided by the City of Toronto to help get them off the streets
+          </div>
+          <span className="notosanstext skillsdemonstrated">
+            FRONT END DEVELOPMENT
           </span>
           <span className="notosanstext skillsdemonstrated">
             UI/UX DESIGN

@@ -3,9 +3,12 @@
   background-color: #1e1d1d;
   margin-top: 10%;
 }
+#secondcolumn{
+  margin-top: 8%;
+}
 .changingtextpanel {
   margin-top: 3%;
-  margin-left: 50px;
+  margin-left: 40px;
   font-family: "Open Sans", sans-serif;
   color: #f5f0eb;
   font-size: clamp(0.85rem, 4vw, 3rem);
@@ -14,10 +17,8 @@
 .textinfooter {
   font-family: "Open Sans", sans-serif;
   color: #f5f0eb;
-  font-size: clamp(0.35rem, 1.25vw, 1.3rem);
-  /* margin-left: 50px; */
-  margin-left: 10%;
-  margin-right: 5%;
+  font-size: clamp(0.35rem, 1.2vw, 1.3rem);
+  
 }
 .transitionspans:before {
   content: "";
@@ -45,46 +46,29 @@
   }
 }
 .heart {
-  height: 16px;
+  height: 10px;
   width: auto;
-  padding-left: 2px;
-  padding-right: 3px;
+  padding-right: 2px;
 }
-.rowoficons {
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
+
 .github {
   margin-left: 40px;
-  height: 25px;
+  height: 20px;
   width: auto;
 }
 .linkedin {
   margin-left: 20px;
-  height: 25px;
+  height: 20px;
   width: auto;
 }
 
 .devpost {
   margin-left: 20px;
-  height: 25px;
+  height: 20px;
   width: auto;
 }
-@media screen and (max-width: 700px) {
-  .github,
-  .linkedin,
-  .devpost {
-    height: 20px;
-    width: auto;
-  }
-  .heart {
-    height: 8px;
-    width: auto;
-  }
-}
 .copyright {
-  margin-left: 0%;
-  margin-right: 4%;
+  margin-right: 3%;
   font-size: clamp(0.3rem, 1.2vw, 1.25rem);
 }
 
@@ -93,3 +77,16 @@
 .devpost:hover {
   opacity: 50%;
 }
+@media screen and (max-width: 700px) {
+  .github,
+  .linkedin,
+  .devpost {
+    height: 15px;
+    width: auto;
+  }
+  .heart {
+    height: 8px;
+    width: auto;
+  }
+}
+

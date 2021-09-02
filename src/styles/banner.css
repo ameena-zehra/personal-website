@@ -2,6 +2,11 @@
   height: 15%;
   width: auto;
 }
+.arrow {
+  margin-top: 5%;
+  width: 7%;
+  height: auto;
+}
 .outerbox {
   padding-top: 15px;
   height: auto;
@@ -10,6 +15,7 @@
 .innerbox {
   margin-left: 6%;
   margin-right: 6%;
+  
 }
 .header-text {
   color: black;
@@ -78,8 +84,8 @@
   .header-text {
     text-align: center;
   }
-  .filler {
-    justify-content: center;
+  .innerbox{
+    padding-bottom: 0.5%;
   }
   .columnwithbutton {
     margin-left: 7%;
@@ -89,8 +95,4 @@
   }
 }
 
-@media screen and (min-width: 1409px) {
-  /* .header-caption {
-    font-size: 1.75rem;
-  } */
-}
+

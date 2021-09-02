@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image'
 import "../styles/banner.css"
+import Arrow from "../images/arrow.png";
 
 const Banner = ({ siteTitle }) => (
   <banner>
@@ -169,14 +170,14 @@ const Banner = ({ siteTitle }) => (
             <div className ="notosanstext header-text hi-there">Hi! I'm Ameena</div>
             <div className ="notosanstext header-caption">A Western Computer Science Student, dog lover and aspiring hacker! </div>
             <Row className ="filler">
-              <Col xs={6}>
-                <Row>
+              {/* <Col xs={6}>
+                <Row> */}
                   <>
                     <style type="text/css">
                       {`
                       .btn{
                         padding: .15rem .55rem;
-                        margin-left: 6.75%;
+                        margin-left: 2.5%;
                         font-family: "Noto Sans", sans-serif;
                         
                       }
@@ -190,9 +191,10 @@ const Banner = ({ siteTitle }) => (
                       .btn-xs {
                         font-size: clamp(0.65rem, 1.9vw, 1.5rem);
                       }
-                      @media screen and (max-width: 756px) {
+                      @media screen and (max-width: 750px) {
                           .btn {
-                            margin-left: 22%;
+                            margin-left: 6.75%;
+                            margin-right: 5%;
                           }
                         }
                       
@@ -206,17 +208,25 @@ const Banner = ({ siteTitle }) => (
                       `}
                     </style>
 
-                    <Button variant="flat" size="xs">
+                    <Button href="/aboutme" variant="flat" size="xs">
                       more about me
                     </Button>
                 </>
-                </Row>
-              </Col>
+               
             </Row>
           </Col>
         </Row>
       </div>
+      
+      <Row className="rowwitharrow">
+        <Image className="arrow" src={Arrow}></Image>
+      </Row>
+
+     
     </Container>
+     <div className ="innerboxforbanner notosanstext header-text main-title"> My Projects</div>
+    
+    
 
     </banner>
 )

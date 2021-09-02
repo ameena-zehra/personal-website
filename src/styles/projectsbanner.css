@@ -37,26 +37,29 @@
   background-color: #f2dcd4;
   border-radius: 5%;
 }
+.betterlivescontainer{
+  background-color: #DAE5CC;
+  border-radius: 5%;
+
+}
 .projectsrow {
   padding-top: 5%;
 }
 .rowwitharrow {
   justify-content: center;
 }
-.arrow {
-  margin-top: 5%;
-  width: 7%;
-  height: auto;
-}
+
 .recipro,
-.habbit {
+.habbit,
+.betterlives {
   display: block;
   width: 100%;
   height: auto;
   transition: transform 0.5s ease;
 }
 .recipro:hover,
-.habbit:hover {
+.habbit:hover,
+.betterlives:hover{
   transform: scale(1.05);
 }
 
@@ -66,9 +69,21 @@
   padding-bottom: 5%;
 }
 
-.projects-title {
+.projects-title{
   font-size: clamp(0.9rem, 2.75vw, 2.5rem);
   font-weight: bold;
+}
+.projects-title:link{
+  color:black;
+}
+
+.projects-title:hover{
+  opacity: 60%;
+  color:black;
+  text-decoration: none;
+}
+.projects-title:visited{
+  color: black;
 }
 .competitionnames {
   font-size: clamp(0.6rem, 1.6vw, 1.6rem);
@@ -89,3 +104,4 @@
   color: #8e9292;
   font-size: clamp(0.35rem, 1.05vw, 1.1rem);
 }
+

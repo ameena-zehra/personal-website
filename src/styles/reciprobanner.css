@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+.reciprobanner{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.solutiongraphic{
+    width: 90%;
+    height: auto;
+}
+
+.brown{
+    color:#463346
+}
+.lightbrown{
+    color: #643F36;
+    font-size: clamp(0.65rem, 1.65vw, 1.8rem);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bolder;
+}
+.reciproblurb{
+    margin-left:5%;
+    font-size: clamp(0.5rem, 1.4vw, 1.35rem);
+}
+
+.reciproinfo{
+    font-size: clamp(0.4rem, 1.3vw, 1.35rem);
+}
+#quote{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: clamp(0.4rem, 1.4vw, 1.35rem);
+}
+.rowinbanner{
+    padding-bottom: 5%;
+}
+.subtitles{
+    margin-left:5%;
+    font-size: clamp(1.2rem, 1.7vw, 1.8rem);
+    font-weight: bolder;
+}
+.subtitlescenter{
+    font-size: clamp(1.2rem, 1.7vw, 1.8rem);
+    font-weight: bolder;
+}
+.center{
+    text-align: center;
+}
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (max-width: 567px) {
+    iframe{
+        width: 80% !important;
+        height: auto !important;
+    }
+}

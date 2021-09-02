@@ -3,7 +3,13 @@ import { Link } from "gatsby"
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 import "../styles/navigation.css"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+  crossorigin="anonymous"
+/>
 const Header = ({ siteTitle }) => (
   <header>
     <Navbar expand ="sm">
@@ -12,10 +18,10 @@ const Header = ({ siteTitle }) => (
         <Navbar.Collapse id = "navbarResponsive">
           <Nav as ="ul" className = "ml-auto">
             <Nav.Item as ="li">
-              <Link to="/about" className = "notosanstext nav-text" activeClassName ="active"> about</Link>
+              <Link to="/aboutme" className = "notosanstext nav-text" activeClassName ="active"> about</Link>
             </Nav.Item>
             <Nav.Item as ="li">
-              <Link to="/projects" className = "notosanstext nav-text" activeClassName ="active"> work </Link>
+              <Link to="/myprojects" className = "notosanstext nav-text" activeClassName ="active"> my projects </Link>
             </Nav.Item>
             <Nav.Item as ="li">
               <Link to="/resume" className = "notosanstext nav-text" activeClassName ="active"> resume</Link>
