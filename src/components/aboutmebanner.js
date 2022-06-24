@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image'
 import "../styles/aboutmebanner.css"
-import PictureofMe from "../images/professionalpic3.jpg";
+import PictureofMe from "../images/professionalpic.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
