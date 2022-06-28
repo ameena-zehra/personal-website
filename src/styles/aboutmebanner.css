@@ -13,7 +13,7 @@
   color: #B2AC88;
   font-size: clamp(1.65rem, 3.5vw, 4.5rem);
   font-weight: 600;
-  padding-top: 5%;
+  padding-top: 10rem;
 }
 .education {
   font-size: clamp(0.7rem, 1.25vw, 1.5rem);
@@ -98,6 +98,7 @@
   }
   .hi-there {
     margin-top: 0%;
+    padding-top:2rem;
   }
   .languages{
       margin-right: 2.5%;
